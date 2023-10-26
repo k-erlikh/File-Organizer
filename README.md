@@ -1,4 +1,4 @@
-# Class-Organizer-
+# File-Organizer
 A Java app that reads through files and sorts them into new folders based on word frequency
 
 Included Files:
@@ -6,7 +6,7 @@ Included Files:
         This is the main file where the program runs.
 
     FileFrequency.java:
-        This class holds the method that checks the frequecy of given words in a .txt file
+        This class holds the method that checks the frequency of given words in a .txt file
     
     Frequencies.java:
         A dictionary that can be initialized with given words.
