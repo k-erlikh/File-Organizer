@@ -2,6 +2,7 @@
 A Java app that reads through files and sorts them into new folders based on word frequency
 
 Included Files:
+
     Main.java:
         This is the main file where the program runs.
 
