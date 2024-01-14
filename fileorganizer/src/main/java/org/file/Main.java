@@ -1,4 +1,4 @@
-package src.java;
+package fileorganizer.src.main.java.org.file;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.PrintWriter;
@@ -7,12 +7,14 @@ import java.io.File;
 
 public class Main{
     public static void main(String[] args){
+        String pathString;
+        pathString = Utils.pathName();
 
         try{
             BufferedReader r;
             PrintWriter w;
             if (args.length >= 0){
-                File path = new File(args[0]);
+                File path = new File(pathString);
                 if (path.isDirectory()){
                     File[] files = path.listFiles();
                     for (File file:files){

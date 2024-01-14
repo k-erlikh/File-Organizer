@@ -1,8 +1,11 @@
-package src.java;
+package fileorganizer.src.main.java.org.file;
 import java.io.BufferedReader;
 import java.io.PrintWriter;
 import java.util.Arrays;
 import java.io.IOException;
+
+import org.apache.pdfbox.pdmodel.PDDocument;
+import org.apache.pdfbox.text.PDFTextStripper;
 
 public class FileFrequency{
 
@@ -37,5 +40,11 @@ public class FileFrequency{
         return;
     }
 
+    public static String pdfToText(String path){
+        PDDocument pdf = PDDocument.load(path);
+        PDFTextStripper pdfStripper = new PDFTextStripper();
+        String textContent = pdfStripper.getText(pdf);
+        return textContent;
+    }
 
 }
